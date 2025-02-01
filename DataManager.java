@@ -60,7 +60,7 @@ public class DataManager {
 
         List<Product> recommendations = new ArrayList<>();
 
-        // Recommend only products with rating > 4.0 in the same category
+  
         for (Product product : products.values()) {
             if (!purchasedProducts.contains(product.getName()) &&
                 purchasedCategories.contains(product.getCategory()) &&
@@ -69,7 +69,6 @@ public class DataManager {
             }
         }
 
-        // If no recommendations found in same category, recommend other high-rated products
         if (recommendations.isEmpty()) {
             for (Product product : products.values()) {
                 if (!purchasedProducts.contains(product.getName()) && product.getRating() >= 4.0) {
