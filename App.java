@@ -2,7 +2,7 @@ import java.util.List;
 
 public class App {
     public static void main(String[] args) {
-        // Initialize DataManager
+\
         DataManager dataManager = new DataManager();
 
         // Add sample products
@@ -13,11 +13,10 @@ public class App {
         dataManager.addProduct(new Product(5, "t-shirt", "Clothing", 4.1));
         dataManager.addProduct(new Product(6, "jeans", "Clothing", 4.0));
 
-        // Create user and add purchase history
         User user1 = new User(1001, "Aditya");
-        dataManager.addUser(user1); // Ensure user is added to DataManager
+        dataManager.addUser(user1); 
 
-        user1.addPurchasedProduct("laptop"); // Corrected method name
+        user1.addPurchasedProduct("laptop");
 
         // Generate and display recommendations
         List<Product> recommendedProducts = dataManager.recommendProducts(1001);
