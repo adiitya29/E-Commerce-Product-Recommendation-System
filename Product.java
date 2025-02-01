@@ -11,7 +11,7 @@ public class Product {
         this.rating = rating;
     }
 
-    public int getId() {  // Ensure this method is exactly named `getId()`
+    public int getId() {
         return id;
     }
 
