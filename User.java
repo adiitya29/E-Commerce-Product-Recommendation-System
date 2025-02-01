@@ -15,7 +15,7 @@ public class User {
         this.purchasedProducts = new ArrayList<>();
     }
 
-    // Getters
+]
     public int getId() {
         return id;
     }
@@ -28,7 +28,7 @@ public class User {
         return purchasedProducts;
     }
 
-    // Methods to Add Products
+   ]
     public void addPurchasedProduct(String product) {
         purchasedProducts.add(product);
     }
